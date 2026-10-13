@@ -1,0 +1,48 @@
+p{
+color: black;
+text-align: center;
+font-family: Verdana, Geneva, Tahoma, sans-serif;    
+}
+
+h1{
+    color: hotpink;
+    border:5px inset palevioletred;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+h2 {
+    color: darkgreen;
+     background-color: aliceblue;
+    border:5px outset gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    color:coral;
+    border:5px groove goldenrod;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h4 {
+    color:rgb(34, 43, 37);
+    background-color: beige;
+    border:5px ridge rgb(135, 170, 199);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+h5 {
+    color:rgb(213, 250, 6);
+    border:5px solid rgb(197, 161, 71);
+    font-family: cursive;
+  
+}
+
+h6 {
+    color:rgb(241, 4, 150);
+    background-color: blanchedalmond;
+    border:3px dotted rgb(240, 236, 42);
+    font-family: fantasy;
+   
+}
