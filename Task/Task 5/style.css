@@ -1,0 +1,39 @@
+
+  h3{
+    color:darkgreen;
+    font-family: monospace;
+    font-size:50px;
+    padding: 10px;
+    background-color:beige
+  }
+  marquee{
+    font-size: 20px;
+    font-family: Georgia;
+    color: brown;
+ }
+
+  #form{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: beige;
+     font-family: georgia;
+     font-size: 25px;
+     color: rgb(151, 47, 47);
+    
+  }
+  body{
+    text-align: center;
+    border: 3px groove rgb(10, 10, 10);
+  
+  }
+ input{
+    width: 220px;
+    height: 25px;
+ }
+ button{
+   font-family: cambria;
+   font-size: 20px;
+   height: fit-content;
+   width: fit-content;
+   color: rgb(189, 104, 121);
+ }
