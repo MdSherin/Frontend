@@ -1,0 +1,57 @@
+body{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav article article'
+    'ads article article'
+    'footer footer footer' ;
+     grid-template-rows: 100px 1fr 1fr 80px;        
+     grid-template-columns: 450px 1fr 30px;
+     height: 100vh;
+     gap:3px
+}
+ #pageheader{
+             grid-area: header;
+             font-family:'Segoe UI';
+             font-size: 25px;
+             background-color:beige;
+             color: brown;
+
+        }
+#maincontent{
+            grid-area:article;
+             background-color:rgb(94, 141, 182);
+             color: rgb(136, 10, 125);
+             font-size: 20px;
+             font-family:'Segoe UI';
+
+        }
+#navbar{
+            grid-area: nav;
+            font-size: 20px;
+            background-color:burlywood;
+            color: black;
+            font-family:'Segoe UI';
+
+        }
+#siteads{
+            grid-area: ads;
+            font-family:'Segoe UI';
+            font-size: 20px;
+            background-color: rgb(113, 167, 167);
+            color: rgba(236, 96, 15, 0.781);
+        }
+
+#Pagefooter{
+            grid-area: footer;
+            font-family:'Segoe UI';
+             font-size: 20px;
+             background-color: darkgrey;
+             color: royalblue;
+        }
+
+header,footer,article,nav,div{
+    text-align: center;
+     padding: 30px;
+}
+
