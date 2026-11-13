@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  Write a function addNumbers(a, b) that accepts two numbers and returns their sum.
+function addition(a, b) {
+    let c=a+b;
+    return c;
+}
+console.log(addition(10, 20));
+
+
+// Write a function checkEvenOdd(num) that checks whether a given number is even or odd.
+function evenodd (num) {
+    if (num % 2 == 0) {
+      return 'even'
+    }
+    else {
+       return 'odd'
+}
+}
+console.log(evenodd(7));
+
+
+// Write a function findLargest(a, b, c) that accepts three numbers and returns the largest number.
+function largest(a, b, c) {
+    if (a >= b && a >= c) {
+        return a;
+    }
+    else if (b >= a && b >= c) {
+        return b;
+    }
+    else {
+        return c;
+    }
+}
+console.log(largest(10, 25, 15));
+
+
+// Write a function factorial(num) that calculates the factorial of a given number.
+function factorial(num) {
+    let fact=1;
+    for(let i=1;i<=num;i++){
+        fact=fact*i;
+    }
+    return fact;
+}
+console.log(factorial(5));
+
+
+// Write a function that reverses a given string.
+function reverseString(str) {
+    let result = "";
+
+    for (let i = str.length - 1; i >= 0; i--) {
+        result = result + str[i];
+    }
+
+    return result;
+}
+console.log(reverseString('javascript'));
+
+
+// Write a function countVowels(str) that counts the number of vowels in a given string.
+function count(str) {
+    let count = 0;
+
+    for (let i = 0; i < str.length; i++) {
+        if ("aeiou".includes(str[i].toLowerCase())) {
+            count++;
+        }
+    }
+
+    return count;
+}
+console.log(count('javascript'));
+
+    </script>
+</body>
+</html>
