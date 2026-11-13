@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Validation</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form name="myForm"  onsubmit="return validateForm()">
+
+        Email:
+
+        <input type="text" name='email' placeholder="@gmail.com">
+        <br><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <script>
+
+        function validateForm() {
+
+            let email = document.myForm.email.value.trim();
+
+            if (email === "") {
+                alert("Email cannot be empty");
+                document.myForm.email.focus();
+                return false;
+            }
+
+          let pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!pattern.test(email)) {
+                alert("Enter a valid email address");
+                document.myForm.email.focus();
+                return false;
+            }
+
+            alert("Email validation successful!");
+            return true;
+
+        }
+
+    </script>
+
+</body>
+</html>
