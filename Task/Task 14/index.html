@@ -1,0 +1,142 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tasks</title>
+</head>
+<body>
+
+<script>
+
+// 1. Palindrome
+let str = "madam";
+let reverse = "";
+
+for(let i = str.length - 1; i >= 0; i--){
+    reverse += str[i];
+}
+
+if(str === reverse){
+    console.log("Palindrome");
+}
+else{
+    console.log("Not a Palindrome");
+}
+
+
+// 2. Anagram
+let str1 = "listen";
+let str2 = "silent";
+
+let a = str1.split("").sort().join("");
+let b = str2.split("").sort().join("");
+
+if(a === b){
+    console.log("Anagram");
+}
+else{
+    console.log("Not an Anagram");
+}
+
+
+// 3. Reverse a String
+let str3 = "javascript";
+let reverse3 = "";
+
+for(let i = str3.length - 1; i >= 0; i--){
+    reverse3 += str3[i];
+}
+
+console.log(reverse3);
+
+
+// 4. Prime Number
+let num = 7;
+let count = 0;
+
+for(let i = 1; i <= num; i++){
+    if(num % i === 0){
+        count++;
+    }
+}
+
+if(count === 2){
+    console.log("Prime Number");
+}
+else{
+    console.log("Not a Prime Number");
+}
+
+
+// 5. Swap Two Numbers Without Third Variable
+let x = 10;
+let y = 20;
+
+x = x + y;
+y = x - y;
+x = x - y;
+
+console.log("x =", x);
+console.log("y =", y);
+
+
+// 6. Iterate an Array Using For Loop
+let arr = [10, 20, 30, 40, 50];
+
+for(let i = 0; i < arr.length; i++){
+    console.log(arr[i]);
+}
+
+
+// 7. Break Statement
+// Print 1 to 100 and stop at 101
+
+for(let i = 1; i <= 101; i++){
+    if(i === 101){
+        break;
+    }
+    console.log(i);
+}
+
+
+// 8. Continue Statement
+// Print 1 to 11, skip 5
+
+for(let i = 1; i <= 11; i++){
+    if(i === 5){
+        continue;
+    }
+    console.log(i);
+}
+
+
+// 9. Check BCA, MCA, CS Engineering
+let course = "MCA";
+
+if(course === "BCA" || course === "MCA" || course === "CS Engineering"){
+    console.log("Eligible Course");
+}
+else{
+    console.log("Not Eligible");
+}
+
+
+// 10. Flatten an Array
+let arrFlat = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+
+let result = arrFlat.flat();
+
+console.log(result);
+
+
+// 11. Access Nested Array Elements
+let arrNested = [1, 2, 3, [4, 5, 6], [7, 8, 9]];
+console.log(arrNested[3]);
+console.log(arrNested[4]);
+
+</script>
+
+</body>
+</html>
